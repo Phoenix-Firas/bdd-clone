@@ -246,10 +246,11 @@ body {
     align-items: center;
 }
 #explore-btn-container{
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
     padding: 10px;
     border-radius: 50%;
     width: fit-content;
+    height: fit-content;
 
 }
 .explore-btn{
@@ -269,18 +270,3 @@ body {
     
 }
 
-@keyframes bg-effect {
-    50%{
-        background: rgba(255, 255, 255, 0.6);
-        padding: 100%;
-        border-radius: 50%;
-        width: fit-content;
-    }
-    100%{
-        background: rgba(255, 255, 255, 0);
-        padding: 0px;
-        border-radius: 50%;
-        width: fit-content;
-    }
-    
-}

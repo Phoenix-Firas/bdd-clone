@@ -1,8 +1,10 @@
 var w = window.innerWidth;
 var header = document.getElementById('header');
 var header_links = document.getElementById('header-links');
-
 var explore_img = document.getElementById('explore-img');
+var explore_btn_container = document.getElementById('explore-btn-container');
+var explore_btn = document.getElementById('explore-btn');
+
 
     var nav_btn = document.createElement('div');
     nav_btn.classList.add('nav-btn')
@@ -23,3 +25,52 @@ var explore_img = document.getElementById('explore-img');
     })
 
 
+
+explore_img.addEventListener('mouseenter', ()=>{
+    explore_btn_container.animate([
+			{
+                background: 'rgba(255, 255, 255, 0.4)',
+                width: 'fit-content',
+                borderRadius: '50%',
+                height: 'fit-content',
+                padding : '10px'
+			},{
+                background: 'rgba(255, 255, 255, 0.6)',
+                padding : '0px',
+                width: '100%',
+                borderRadius: '0%',
+                height: '100%',
+                paddingTop: '20%'
+			}
+		], {
+			duration: 700,
+			fill: 'forwards',
+			easing: 'ease-in-out'
+			
+		});
+});
+
+explore_img.addEventListener('mouseleave', ()=>{
+    explore_btn_container.animate([
+            {
+                background: 'rgba(255, 255, 255, 0.6)',
+                padding : '0px',
+                width: '100%',
+                borderRadius: '0%',
+                height: '100%',
+                paddingTop: '20%'
+			},{
+                background: 'rgba(255, 255, 255, 0.4)',
+                width: 'fit-content',
+                borderRadius: '50%',
+                height: 'fit-content',
+                padding : '10px'
+			}
+		], {
+			duration: 700,
+			fill: 'forwards',
+			easing: 'ease-in-out'
+			
+		});
+});
+    

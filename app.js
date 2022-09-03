@@ -1,3 +1,4 @@
+// initializig variables
 var w = window.innerWidth;
 var header = document.getElementById('header');
 var header_links = document.getElementById('header-links');
@@ -18,6 +19,7 @@ var slide_show_images = [
                         'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide11.jpg)'];
 
 
+// creating timed slide-show 
 var img_num = 0;
 
 setInterval(()=>{
@@ -47,6 +49,7 @@ setInterval(()=>{
 
     })
 
+// animating a background effect
 explore_img.addEventListener('mouseenter', ()=>{
     explore_btn_container.animate([
 			{
@@ -70,7 +73,7 @@ explore_img.addEventListener('mouseenter', ()=>{
 			
 		});
 });
-
+// animating a background effect
 explore_img.addEventListener('mouseleave', ()=>{
     explore_btn_container.animate([
             {
@@ -96,6 +99,7 @@ explore_img.addEventListener('mouseleave', ()=>{
 });
     
 
+// creating and appending the scroll-up button
 var scroll_btn = document.createElement('a');
 scroll_btn.href = '#';
 scroll_btn.classList.add('scroll-btn');
@@ -109,5 +113,4 @@ window.addEventListener('scroll', ()=>{
         scroll_btn.classList.remove('active')
     }
 });
-
 

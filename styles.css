@@ -364,3 +364,59 @@ body {
     cursor: pointer;
     transform: scale(0.4);
 }
+
+/* preffered css */
+
+#prefferd{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    background: url(images/parallax-light.jpg) 0%;
+    color: black;
+    padding: 50px;
+}
+
+
+.preffered-divs {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+}
+.preffered-div img{
+    transform: scale(.7);
+}
+
+.preffered-div h1 {
+    font-size: 30px;
+}
+
+.preffered-div:nth-child(1) h1{
+    color: rgb(0, 195, 255);
+}
+
+.preffered-div:nth-child(2) h1 {
+    color: rgb(255, 0, 85);
+}
+
+.preffered-div:nth-child(3) h1 {
+    color: rgb(43, 43, 255);
+}
+
+.preffered-div:nth-child(4) h1 {
+    color: green;
+}
+
+.preffered-div p {
+    margin-top: 20px;
+    max-width: 200px;
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: bolder;
+}
+

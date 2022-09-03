@@ -490,12 +490,154 @@ body {
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
-    min-width: 500px;
+    min-width: 30vw;
     border-radius:10px ;
     margin-right: 70px;
 }
 
 .testimonials-div iframe{
+    max-width: 80%;
     border-radius: 10px;
     margin-right: 30px;
+}
+
+/* footer css */
+
+footer{
+    background: rgb(35, 35, 35);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer-row-1 {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.not-link{
+    opacity: 0.5;
+
+}
+.footer-sub-titles{
+    /* background: yellow; */
+    width: 100%;
+}
+
+.footer-row-1 div{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row-1-item{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 60px;
+}
+
+.row-1-item li {
+    list-style: none;
+    margin-top: 20px; 
+    color: white;
+    border: none;
+}
+
+.row-1-item li a,
+.row-1-column-2 li a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.row-1-column-2 li button{
+    border-radius: 50%;
+}
+
+.row-1-item li a:hover,
+.row-1-column-2 li a:hover {
+    animation: links-border .5s ease forwards;
+}
+
+@keyframes links-border {
+    10%{
+        border-bottom: 2px solid var(--blue-btn-background);
+    }
+    100%{
+        border-bottom: 2px solid var(--blue-btn-background);
+        padding-bottom: 0;
+    }
+}
+
+.row-1-column-2 li img{
+    width:30%;
+}
+
+.terms-and-privacy{
+    font-size: 12px;
+    margin: 0px 10px;
+}
+
+.row-1-column-2{
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.row-1-column-2 li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.subscribe{
+    border-bottom: 1px solid white;
+}
+
+.subscribe input{
+    background: transparent;
+    padding: 15px 10px;
+    border: none;
+}
+
+.subscribe a {
+    background: transparent;
+    padding: 5px 5px;
+    border: none;
+}
+
+/*  */
+.footer-row-2 {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0px 0px 0px;
+}
+
+.footer-row-2 p {
+    font-size: 12px;
+    margin-right: 100px;
+}
+
+.footer-row-2 p a {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    opacity: 1;
+    font-size: 14px;
+}
+.footer-row-2 a{
+    text-decoration: none;
+    color: var(--blue-btn-background);
+    font-size: 30px;
+
+}
+
+.footer-row-2 img {
+    width: 20px;
 }

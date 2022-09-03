@@ -23,6 +23,8 @@ body {
     width: fit-content;
     height: fit-content;
     border-radius: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 /*  */
@@ -189,7 +191,7 @@ body {
     height: 400px;
     display: flex;
     flex-flow: nowrap column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: white;
     border-radius: 7px;
@@ -210,7 +212,7 @@ body {
 }
 
 .foundations-text {
-        display: flex;
+    display: flex;
     width: 70%;
     margin-bottom: 20px;
 }
@@ -262,11 +264,87 @@ body {
     font-weight: 900;
 }
 
-@keyframes explore-btn-effect {
+/* join bdd css */
+
+#join-bdd-section{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+#join-bdd-section h1{
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+    margin: 10vh 0px;
+}
+
+.join-details{
+    /* display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;    */
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 1fr;
+}
+.join-details img{
+    width:100%;
+
+}
+.join-info{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+    align-items: flex-start; 
+}
+
+.join-info-div{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center; 
+    color:black;
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: fit-content;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.join-info-div:hover {
+    animation: join-info-div-animation .5s ease-out forwards;
+}
+
+@keyframes join-info-div-animation {
     to{
-        color: white;
-        background: var(--blue-btn-background);
+        margin-top: -20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     }
     
+}
+
+.join-info-div h4{
+    width:100px;
+    margin: 40px 0px 20px 0px ;
+}
+
+.join-info-div li {
+    list-style: none;
+    margin: 10px 40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.join-info-div li span{
+    color: blue;
+    margin: 10px -20px;
+    padding-right:30px;
+}
+
+.join-info-div a {
+    list-style: none;
+    margin: 40px 0px 30px 5px;
 }
 

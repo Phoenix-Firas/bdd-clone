@@ -74,3 +74,18 @@ explore_img.addEventListener('mouseleave', ()=>{
 		});
 });
     
+///////////////
+var scroll_btn = document.createElement('a');
+scroll_btn.href = '#';
+scroll_btn.classList.add('scroll-btn');
+scroll_btn.innerText = '^';
+document.body.append(scroll_btn);
+
+window.addEventListener('scroll', ()=>{
+    if(window.pageYOffset > 100){
+        scroll_btn.classList.add('active')
+    }else{
+        scroll_btn.classList.remove('active')
+    }
+});
+

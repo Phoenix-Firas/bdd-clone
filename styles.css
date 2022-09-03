@@ -8,9 +8,35 @@
 /* utilities */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+.scroll-btn{
+    background: rgb(230, 230, 230);
+    color: var(--blue-btn-background);
+    position: fixed;
+    font-size: 25px;
+    right:20px;
+    bottom: 0px;
+    padding: 10px 15px 0px 15px;
+    text-decoration: none;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.scroll-btn.active{
+    bottom: 20px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 :root {

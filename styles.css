@@ -1,0 +1,157 @@
+/* reset */
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* utilities */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue-btn-background:#0078be;
+}
+
+.blue-btn{
+    padding:10px 15px;
+    background: var(--blue-btn-background);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+/*  */
+
+.landing-page{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slide1.jpg);
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.landing-page header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+
+} 
+
+.landing-page header img{
+    height:80%;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.header-links{
+    list-style: none;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.header-links li{
+    font-size: 13px;
+    margin: 50px 40px 0px 0px ;
+}
+
+.header-links li:nth-child(7) {
+    margin: 40px 40px 0px 0px;
+}
+
+.landing-page P{
+    font-size: 50px;
+    font-weight: bolder;
+    max-width: 950px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20vh;
+
+}
+
+
+.nav-btn{
+    height: 10px;
+    width:25px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    position: fixed;
+    top:40px;
+    right:60px;
+    z-index: 3;
+    display: 'none';
+    opacity: 0;;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .landing-page header{
+        background: black;
+    } 
+
+    .header-links{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        background: black;
+        z-index: 1;
+        width: 100vw;
+        height: 95vh;
+        padding-left: 80px;
+        position: fixed;
+        left:100vw;
+        top: 120px;
+        
+    }
+    .header-links li{
+        display: flex;
+        flex-flow: wrap column;
+        justify-self: flex-start;
+        align-self: flex-start;
+        margin-top: 30px;
+        
+        
+    }
+
+    .nav-btn{
+        display: flex;
+        opacity: 1;
+    }
+
+}
+
+@keyframes collapse-nav-btn {
+    to {
+        height:0;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+    }
+}
+
+@keyframes grow-nav-btn {
+    to {
+        height: 10px;
+    }
+}
+@keyframes show-nav {
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes hide-nav {
+    to {
+        left: 100vw;
+    }
+}

@@ -25,6 +25,7 @@ body {
     border-radius: 20px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 /*  */
@@ -80,7 +81,6 @@ body {
     margin-top: 20vh;
 
 }
-
 
 .nav-btn{
     height: 10px;
@@ -365,9 +365,9 @@ body {
     transform: scale(0.4);
 }
 
-/* preffered css */
+/* preferred css */
 
-#prefferd{
+#preferrd{
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -379,8 +379,7 @@ body {
     padding: 50px;
 }
 
-
-.preffered-divs {
+.preferred-divs {
     width: 80%;
     height: fit-content;
     display: flex;
@@ -388,31 +387,31 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.preffered-div img{
+.preferred-div img{
     transform: scale(.7);
 }
 
-.preffered-div h1 {
+.preferred-div h1 {
     font-size: 30px;
 }
 
-.preffered-div:nth-child(1) h1{
+.preferred-div:nth-child(1) h1{
     color: rgb(0, 195, 255);
 }
 
-.preffered-div:nth-child(2) h1 {
+.preferred-div:nth-child(2) h1 {
     color: rgb(255, 0, 85);
 }
 
-.preffered-div:nth-child(3) h1 {
+.preferred-div:nth-child(3) h1 {
     color: rgb(43, 43, 255);
 }
 
-.preffered-div:nth-child(4) h1 {
+.preferred-div:nth-child(4) h1 {
     color: green;
 }
 
-.preffered-div p {
+.preferred-div p {
     margin-top: 20px;
     max-width: 200px;
     font-size: 15px;
@@ -420,3 +419,52 @@ body {
     font-weight: bolder;
 }
 
+/* academy css */
+
+#academy{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(images/parallax-7.jpg) 0%;
+    color: white;
+    padding: 50px 0px;
+}
+
+.academy img{
+    width:100px;
+    margin-bottom:30px;
+}
+
+.academy p {
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: light;
+}
+
+.tracks{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:50px;
+}
+
+.tracks img{
+    width:90px;
+    padding-left: 50px;
+}
+
+.tracks h3 {
+    max-width: 170px;
+    padding-left: 35px;
+    margin-top: 20px;
+}
+
+.programs-btn{
+    font-weight: lighter;
+    margin: 30px 0px 0px 90px;
+}

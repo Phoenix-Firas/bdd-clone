@@ -4,6 +4,32 @@ var header_links = document.getElementById('header-links');
 var explore_img = document.getElementById('explore-img');
 var explore_btn_container = document.getElementById('explore-btn-container');
 var explore_btn = document.getElementById('explore-btn');
+var landing_page = document.getElementById('landing-page');
+var slide_show_images = [
+            'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide1.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide2.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide3.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide4.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide5.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide6.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide7.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide8.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide9.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide10.jpg)',
+                        'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide11.jpg)'];
+
+
+
+var img_num = 0;
+
+setInterval(()=>{
+    if(img_num < slide_show_images.length){
+        img_num += 1;
+    }else{
+        img_num = 0;
+    }
+    landing_page.style.background =  slide_show_images[img_num];
+}, 5000);
 
 
     var nav_btn = document.createElement('div');
@@ -23,7 +49,6 @@ var explore_btn = document.getElementById('explore-btn');
         }
 
     })
-
 
 
 explore_img.addEventListener('mouseenter', ()=>{
@@ -88,4 +113,5 @@ window.addEventListener('scroll', ()=>{
         scroll_btn.classList.remove('active')
     }
 });
+///////////////
 

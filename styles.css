@@ -10,6 +10,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -56,7 +57,7 @@ body {
 
 /*  */
 
-.landing-page{
+#landing-page{
     height: 100vh;
     width: 100vw;
     background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slide1.jpg);
@@ -64,7 +65,7 @@ body {
     flex-flow: wrap column;
 }
 
-.landing-page header{
+#landing-page header{
     height: 120px;
     width: 100%;
     display: flex;
@@ -73,7 +74,7 @@ body {
 
 } 
 
-.landing-page header img{
+#landing-page header img{
     height:80%;
     margin-top: 15px;
     margin-left: 80px;
@@ -96,7 +97,7 @@ body {
     margin: 40px 40px 0px 0px;
 }
 
-.landing-page P{
+#landing-page P{
     font-size: 50px;
     font-weight: bolder;
     max-width: 950px;
@@ -152,10 +153,10 @@ body {
         
     }
 
-    .nav-btn{
-        display: flex;
-        opacity: 1;
-    }
+.nav-btn{
+    display: flex;
+    opacity: 1;
+}
 
 }
 
@@ -585,6 +586,8 @@ footer{
 
 .row-1-column-2 li button{
     border-radius: 50%;
+    background: transparent;
+    border: none;
 }
 
 .row-1-item li a:hover,
@@ -629,15 +632,13 @@ footer{
     background: transparent;
     padding: 15px 10px;
     border: none;
+    outline: none;
 }
 
-.subscribe a {
-    background: transparent;
-    padding: 5px 5px;
-    border: none;
+.subscribe input:focus {
+    color: white;
 }
 
-/*  */
 .footer-row-2 {
     display: flex;
     flex-flow: wrap row;

@@ -468,3 +468,34 @@ body {
     font-weight: lighter;
     margin: 30px 0px 0px 90px;
 }
+
+#testimonials{
+    color:black;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+#testimonials h1{
+    max-width: 300px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.testimonials-div{
+    color:black;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+    border-radius:10px ;
+    margin-right: 70px;
+}
+
+.testimonials-div iframe{
+    border-radius: 10px;
+    margin-right: 30px;
+}

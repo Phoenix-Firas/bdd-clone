@@ -6,6 +6,7 @@ var header_links = document.getElementById('header-links');
 var explore_img = document.getElementById('explore-img');
 var explore_btn_container = document.getElementById('explore-btn-container');
 var explore_btn = document.getElementById('explore-btn');
+
 var slide_show_images = [
             'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide1.jpg)',
                         'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/slider/slide2.jpg)',
@@ -32,6 +33,8 @@ setInterval(()=>{
     landing_page.style.background =  slide_show_images[img_num];
 }, 5000);
 
+
+// creating navigation button 
     var nav_btn = document.createElement('div');
     nav_btn.classList.add('nav-btn')
     header.append(nav_btn);
@@ -41,10 +44,12 @@ setInterval(()=>{
         if(nav_hidden){
             header_links.style.animation = 'show-nav 1s ease-out forwards';
             nav_btn.style.animation = 'collapse-nav-btn .5s ease forwards';
+            header_links.style.display = 'block';
             nav_hidden = false;
         }else{
             header_links.style.animation = 'hide-nav 1s ease-out forwards';
             nav_btn.style.animation = 'grow-nav-btn .5s ease forwards';
+            header_links.style.display = 'none';
             nav_hidden = true;
         }
 

@@ -688,10 +688,16 @@ footer{
 
 .footer-row-2 p a {
     text-decoration: none;
-    color: rgb(0, 0, 255);
+    color: var(--blue-btn-background);
+    filter: brightness(2);
     opacity: 1;
     font-size: 14px;
 }
+
+.footer-row-2 p a:hover {
+    filter: brightness(1.5);
+}
+
 .footer-row-2 a{
     text-decoration: none;
     color: var(--blue-btn-background);

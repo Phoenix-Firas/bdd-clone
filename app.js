@@ -1,5 +1,6 @@
 // initializig variables
 var w = window.innerWidth;
+var landing_page = document.getElementById('landing-page');
 var header = document.getElementById('header');
 var header_links = document.getElementById('header-links');
 var explore_img = document.getElementById('explore-img');

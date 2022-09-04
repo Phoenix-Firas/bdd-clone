@@ -127,35 +127,33 @@ body {
     opacity: 0;
     display: 'none';
 }
-
 @media only screen and (max-width: 1100px) {
-    #landing-page header{
-        background: black;
-    } 
 
-    .header-links{
-        display: none;
+    #landing-page header {
+        background: black;
+    }
+
+    .header-links {
         background: black;
         z-index: 1;
         width: var(--section-width);
         height: 95vh;
         position: fixed;
-        left:var(--section-width);
+        left: var(--section-width);
         top: 118px;
-        
     }
 
-    .header-links li{
+    .header-links li {
         margin-top: 30px;
         margin-left: 80px;
-    }  
-    
-    .header-links li:nth-child(7){
-        margin-top: 30px;
-        margin-left: 80px;
-    }      
+    }
 
-    .nav-btn{
+    .header-links li:nth-child(7) {
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    .nav-btn {
         display: flex;
         opacity: 1;
     }

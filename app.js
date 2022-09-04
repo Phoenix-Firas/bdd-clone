@@ -49,10 +49,9 @@ setInterval(()=>{
         }else{
             header_links.style.animation = 'hide-nav 1s ease-out forwards';
             nav_btn.style.animation = 'grow-nav-btn .5s ease forwards';
-            header_links.style.display = 'none';
+            header_links.style.display = 'flex';
             nav_hidden = true;
         }
-
     })
 
 // animating a background effect

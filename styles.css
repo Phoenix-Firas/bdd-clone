@@ -121,7 +121,7 @@ body {
     width:25px;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
-    position: fixed;
+    position: absolute;
     top:50px;
     left:90vw;
     opacity: 0;
@@ -141,6 +141,7 @@ body {
         position: fixed;
         left: var(--section-width);
         top: 118px;
+        display: none;
     }
 
     .header-links li {
@@ -172,6 +173,7 @@ body {
         height: 10px;
     }
 }
+
 @keyframes show-nav {
     to {
         left: 0px;
@@ -367,10 +369,24 @@ body {
     grid-template-columns: 30vw 70vw;
     grid-template-rows: 1fr;
 }
-.join-details img{
-    width:100%;
 
+.join-details img {
+    width: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .join-details {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .join-details img {
+            width: 50vw;
+        }
+}
+
 .join-info{
     display: flex;
     flex-flow: nowrap row;
@@ -670,6 +686,13 @@ body {
     margin-right: 70px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .testimonials-div {
+            justify-content: center;
+            margin-left: 160px;
+        }
+}
+
 .testimonials-div iframe{
     max-width: 80%;
     border-radius: 10px;
@@ -855,5 +878,23 @@ footer{
 @media only screen and (max-width: 460px) {
     :root {
         --section-width: 130vw;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    :root {
+        --section-width: 155vw;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    :root {
+        --section-width: 165vw;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    :root {
+        --section-width: 190vw;
     }
 }

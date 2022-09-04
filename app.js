@@ -49,7 +49,9 @@ setInterval(()=>{
         }else{
             header_links.style.animation = 'hide-nav 1s ease-out forwards';
             nav_btn.style.animation = 'grow-nav-btn .5s ease forwards';
-            header_links.style.display = 'flex';
+            // This will result in a bug where when you switch to mobile view, click the nav-btn to show the menu, then click again to hide it then switch back to laptop view you wont find the  header links displayed again and the only way to display them is to go back to mobile view and click the nav-btn again.
+            // This should not be a problem for real users who dont switch screen sizes on their device.
+            header_links.style.display = 'none';
             nav_hidden = true;
         }
     })
@@ -118,4 +120,3 @@ window.addEventListener('scroll', ()=>{
         scroll_btn.classList.remove('active')
     }
 });
-

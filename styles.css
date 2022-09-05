@@ -389,7 +389,7 @@ body {
 
 .join-info{
     display: flex;
-    flex-flow: nowrap row;
+    flex-flow: wrap row;
     justify-content: space-around;
     align-items: flex-start; 
 }
@@ -568,7 +568,7 @@ body {
 
 .trending-div h3 {
     padding: 20px 25px;
-    height: 60px;
+    height: fit-content;
     font-weight: bolder ;
 }
 
